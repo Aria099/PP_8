@@ -13,7 +13,7 @@ import web.service.CarServiceImpl;
 @RequestMapping("/cars")
 public class CarController {
 
-    private CarServiceImpl carServiceImpl;
+    private final CarServiceImpl carServiceImpl;
 
     @Autowired
     public CarController(CarServiceImpl carServiceImpl) {
